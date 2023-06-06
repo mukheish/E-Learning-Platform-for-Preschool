@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" type="text/css" href="login.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      background-color: #f2f2f2; /* Set a background color */
+      background-image: url("2.png"); /* Set a background image */
+      background-repeat: no-repeat; /* Prevent the background image from repeating */
+      background-size: cover; /* Scale the background image to cover the entire body */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Pre-School Management System</h1>
+    <ul>
+      <li><button class="borderless-button" value="1" onclick="showLogin(this.value)">Parent & Student</button></li>
+      <li><button class="borderless-button" value="3" onclick="showLogin(this.value)">Teacher</button></li>
+      <li><button class="borderless-button" value="4" onclick="showLogin(this.value)">Admin</button></li>
+    </ul>
+  </div>
+
+    <!-- <button value="1" onclick="showLogin(this.value)">Parent</button>
+    <button value="2" onclick="showLogin(this.value)">Student</button>
+    <button value="3" onclick="showLogin(this.value)">Teacher</button>
+    <button value="4" onclick="showLogin(this.value)">Admin</button> -->
+    
+  <div class="container" id="parent">
+    <h2>Parent & Student Login</h2>
+    <form action="user/authenticate.php" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      <input type="submit" value="Login">
+    </form>
+    <div id="register"><a>Don't Have account?<a href="register.html">Register Now</a></a></div> 
+  </div>
+
+  <!-- <div class="container" id="student" style="display: none">
+    <h2>Student Login</h2>
+    <form action="user/authenticate.php" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      <input type="submit" value="Login">
+    </form>
+    <div id="register"><a>Don't Have account?<a href="register.html">Register Now</a></a></div>
+  </div> -->
+
+  <div class="container" id="teacher" style="display: none">
+    <h2>Teacher Login</h2>
+    <form action="teacher/authenticate.php" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      <input type="submit" value="Login">
+    </form>
+    <div id="register"><a>Don't Have account?<a href="register.html">Register Now</a></a></div>
+  </div>
+
+  <div class="container" id="admin" style="display: none">
+    <h2>Admin Login</h2>
+    <form action="admin/authenticate.php" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+      <input type="submit" value="Login">
+    </form>
+    <div id="register"><a>Don't Have account?<a href="register.html">Register Now</a></a></div>
+  </div>
+  <script>
+
+    function showLogin(val){
+        if(val == 1){
+            document.getElementById('parent').style.display ="block";
+            //document.getElementById('student').style.display ="none";
+            document.getElementById('teacher').style.display ="none";
+            document.getElementById('admin').style.display ="none";
+        }
+        else if(val == 2){
+            document.getElementById('parent').style.display ="none";
+            //document.getElementById('student').style.display ="block";
+            document.getElementById('teacher').style.display ="none";
+            document.getElementById('admin').style.display ="none";
+        }
+        else if(val == 3){
+            document.getElementById('parent').style.display ="none";
+            //document.getElementById('student').style.display ="none";
+            document.getElementById('teacher').style.display ="block";
+            document.getElementById('admin').style.display ="none";
+        }
+        else if (val == 4){
+            document.getElementById('parent').style.display ="none";
+            //document.getElementById('student').style.display ="none";
+            document.getElementById('teacher').style.display ="none";
+            document.getElementById('admin').style.display ="block";
+        }
+    }
+  </script>
+</body>
+</html>

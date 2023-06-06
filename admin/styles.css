@@ -1,0 +1,236 @@
+/* Header */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #FFC107;
+  padding: 10px;
+  color: #0a0000;
+  text-align: center;
+  overflow: hidden;
+  /* white-space: nowrap; */
+  text-overflow: ellipsis;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 35px;
+  font-weight: bold;
+  float: left;
+}
+
+.header ul {
+  display: flex;
+  justify-content: end;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.header ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.header ul li a:hover {
+  color: #000;
+}
+
+.container-report {
+  display: flex;
+  justify-content: center;
+  
+}
+.report-card-form {
+  width: 400px;
+  margin: 50px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  
+}
+
+.report-card-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.report-card-form input[type="text"],
+.report-card-form input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.report-card-form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.report-card-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 14px;
+  color: #333;
+  width: 200px;
+}
+
+.custom-select:focus {
+  outline: none;
+  border-color: #999;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.select-btn {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin:20px;
+}
+
+.event-card {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.event-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.toggle-form {
+  text-align: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.fa-plus {
+  font-size: 20px;
+}
+
+.logout-button a {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: flex-end;
+}
+
+.logout-button a:hover {
+  background-color: #cc0000;
+}
+
+
+.quiz-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.quiz-container p {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.quiz-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.quiz-container input[type='radio'] {
+  margin-right: 10px;
+  margin-top: 10px;
+  font-size:15px;
+}
+
+.quiz-container button[type='submit'] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin:20px;
+}
+
+.quiz-container button[type='submit']:hover {
+  background-color: #45a049;
+  
+}

@@ -1,0 +1,50 @@
+/* Header */
+.header {
+  background-color: #FFC107;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.header ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.header ul li a:hover {
+  color: #000;
+}
+
+.borderless-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  color: #000;
+  
+}
+
+.borderless-button:hover {
+  color: red;
+}
